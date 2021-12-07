@@ -1,0 +1,117 @@
+:root{
+    --blue: rgb(167,199,231);
+    --white: white;
+    --gray: lightgray;
+    --green: rgb(167, 231, 167);
+    --purple: rgb(183, 167, 231);
+    --lightblue: rgb(233, 241, 249);
+}
+body {
+    background-color: var(--lightblue);
+    font-family: 'Confortaa'
+}
+.app h1 {
+    background-color: var(lightblue);
+    border-bottom: 10px solid black;
+    border-width: thick;
+    padding: 2%;
+    font-size: 2em;
+    margin: 0.67em 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.app h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app .center {
+    margin: auto;
+}
+.base-grid {
+    display: grid;
+    column-gap: 3px;
+    row-gap: 10px;
+}
+.home-columns {
+    grid-template-columns: repeat(6, 1fr);
+}
+.full-width {
+    grid-column-start: span 6;
+}
+.center {
+    justify-self: center;
+    margin-top: 3%;
+}
+.fit {
+    display: flex;
+
+}
+
+.header-img {
+    grid-column-start: span 2;
+}
+.header-p {
+    grid-column-start: span 4;
+}
+footer {
+    margin-top: 5%;
+    background-color: --blue;
+    padding: 20px 0px 20px 0px;
+    height: 100%;
+}
+
+.container{
+    padding-right: 1rem; 
+    padding-left: 1rem; 
+    margin-right: auto; 
+    margin-left: auto;
+}
+
+.app .notification {
+    /* for notifications container */
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}
+
+.app .counter {
+    width: 10px;
+    height: 10px;
+    background-color: crimson;
+    border-radius: 50%;
+    padding: 7px;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: 48%;
+    margin-left: 50%;
+}
+
+@media screen and (max-width: 576px) {
+
+    .app .counter {
+        width: 10px;
+        height: 10px;
+        background-color: crimson;
+        border-radius: 50%;
+        padding: 7px;
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bolder;
+        position: absolute;
+        top: 38%;
+        margin-left: 50%;
+    }
+
+}
