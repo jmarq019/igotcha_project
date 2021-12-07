@@ -50,8 +50,8 @@ const SignUp = ({ setUser }) =>{
     return(
         <main className="base-grid home-columns">
             <section className="sign full-width">
-                <form className=" signup fit stack" style={{margin:"auto", maxWidth:"70%"}}>
-                    <h4 className="sig"><FormattedMessage id="signUp"/></h4>
+                <form className=" signup fit stack" style={{margin:"auto", maxWidth:"70%", backgroundColor:"var(--blue)", borderRadius:"10px"}}>
+                    <h1 className="simple-header" style={{color:"white"}}><FormattedMessage id="signUp"/></h1>
                     <div className="empw">
                         <label><FormattedMessage id="name"/></label>
                         <input 
@@ -101,6 +101,7 @@ const SignUp = ({ setUser }) =>{
                     </div>
                     <button 
                         className="btnlog"
+                        style={{color:"white"}}
                         disabled = {!(formState.first_name && formState.last_name && formState.username && formState.email && formState.password)}
                         type = "submit"
                         onClick={handleFormSubmit}

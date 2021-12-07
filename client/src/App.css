@@ -77,22 +77,27 @@ footer {
     background-color: white;
     color: black;
 }
-
+.app .notifications {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
 .app .counter {
     width: 10px;
     height: 10px;
-    background-color: crimson;
+    background-color: red;
     border-radius: 50%;
     padding: 7px;
     font-size: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color:white;
     font-weight: bolder;
     position: absolute;
-    top: 48%;
-    margin-left: 50%;
+    top: -15px;
+    margin-left:5%;
 }
 
 @media screen and (max-width: 576px) {

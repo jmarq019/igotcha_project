@@ -215,7 +215,7 @@ const OfferService = () =>{
                 user?.servicePost.map((post) => ( 
                     <div className="" key={post._id}>
                         <div className="find">
-                        <img id="profpic" src="" alt="Profile Picture" src={post.image} style={{ maxHeight: '150px' }} />
+                        <img id="profpic" src="" alt="Service image" src={post.image} style={{ maxHeight: '150px' }} />
                             <div>
                                 <h6><FormattedMessage id="serviceName"/>: {post.name}</h6>
                                 <p><FormattedMessage id="typeOfService"/>:{post.type}</p>

@@ -3,6 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
 import { IoLogoGithub, IoLogoLinkedin, IoMdMail } from "react-icons/io";
+import { FormattedMessage } from 'react-intl';
 
 //Adding some styling 
 const Background = styled.div`
@@ -103,11 +104,11 @@ const ContactusModal = ({ showContactusModal, setShowContactusModal }) =>{
                 <animated.div style={animation}>
                 <ModalWrapper id="modal-wrapper">
                     <ModalContent id="modal-content">
-                        <h1>Our contact info:</h1>
-                            <h3>Evelyn Madonado</h3>
-                            <p><a href="evelyn.gmaldonado@gmail.com"><IoMdMail/></a> <a href="https://www.linkedin.com/in/evelyngmaldonado/" taget="_blank" rel="noopener noreferrer"><IoLogoLinkedin/></a> <a href="https://github.com/EvelynGMaldonado" taget="_blank" rel="noopener noreferrer"><IoLogoGithub/></a></p>
-                            <h3>Jorge Barrag&aacute;n</h3>
-                            <p><a href="mailto:jmarq19@outlook.com"><IoMdMail/></a> <a href="https://www.linkedin.com/in/jorgemarquezbarragan/" target="_blank" rel="noopener noreferrer"><IoLogoLinkedin/></a> <a href="https://github.com/jmarq019" target="_blank" rel="noopener noreferrer"><IoLogoGithub/></a></p>
+                        <h1><FormattedMessage id="contactInfo"/></h1>
+                            <h2>Evelyn Madonado</h2>
+                            <p><a href="evelyn.gmaldonado@gmail.com">Email<IoMdMail/></a> / <a href="https://www.linkedin.com/in/evelyngmaldonado/" taget="_blank" rel="noopener noreferrer">LinkedIn<IoLogoLinkedin/></a> / <a href="https://github.com/EvelynGMaldonado" taget="_blank" rel="noopener noreferrer">GitHub<IoLogoGithub/></a></p>
+                            <h2>Jorge Barrag&aacute;n</h2>
+                            <p><a href="mailto:jmarq19@outlook.com">Email<IoMdMail/></a> / <a href="https://www.linkedin.com/in/jorgemarquezbarragan/" target="_blank" rel="noopener noreferrer">LinkedIn<IoLogoLinkedin/></a> / <a href="https://github.com/jmarq019" target="_blank" rel="noopener noreferrer">GitHub<IoLogoGithub/></a></p>
                     </ModalContent>
                     <CloseModalButton id="close-modal-btn" aria-label='Close modal' onClick={() => setShowContactusModal(prev => !prev)} />
                 </ModalWrapper>

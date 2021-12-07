@@ -66,7 +66,12 @@ const messagesInEnglish = {
     saveChanges:"Save Changes",
     email:"Email",
     missionStateText:"The IGotcha app helps you find qualified individuals in your area to connect you to the services that you need. Others can also use the app to discover and hire your services. We, as humans, will always need a hand from others; conversely, we also have skills to share and help those around us.",
-    userName:"User Name"
+    userName:"User Name",
+    by:"by",
+    hireService:"Hire Service",
+    aboutTheDevs:"About the Devs",
+    aboutText:"As Junior Developers, we have decided to create the IGotcha App with the goal of providing a complete solution that is easy to use, accessible and useful for all. Being that we are Spanish speakers and living in a multicultural country, we decided to include Spanish as a language option for our application. We believe that our app should be accessible to everyone.",
+    contactInfo:"Our contact info:"
 
 
 }
@@ -128,7 +133,12 @@ const messagesInSpanish = {
     saveChanges:"Actualizar",
     email:"Correo Electrónico",
     missionStateText:"La aplicación IGotcha te ayuda a encontrar personas calificadas en su área para ponerte en contacto con los servicios que necesita. Los demás también pueden utilizar la aplicación para descubrir y contratar tus servicios. Nosotros, como seres humanos, siempre necesitaremos que alguién nos brinde una mano amiga; a la inversa, también tenemos habilidades para compartir y ayudar a quienes nos rodean.",
-    userName:"Nombre de usuario"
+    userName:"Nombre de usuario",
+    by:"brindado por",
+    hireService:"Contratar Servicio",
+    aboutTheDevs:"Acerca de los Devs",
+    aboutText:"Como Desarrolladores, hemos decidido crear la aplicación IGotcha con el objetivo de brindar una herramienta completa, fácil de usar, accesible y útil para todos. Ya que somos hispanohablantes y vivimos en un país multicultural, decidimos incluir el español como opción de idioma para nuestra aplicación. Creemos que nuestra aplicación debe ser accesible para todos.",
+    contactInfo:"Nuestros datos:"
 
     
 
