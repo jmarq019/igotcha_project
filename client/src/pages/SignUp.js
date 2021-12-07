@@ -60,6 +60,7 @@ const SignUp = ({ setUser }) =>{
                             name="first_name"
                             onChange={handleInputChange}
                             value={formState.first_name}
+                            style={{minWidth:"70%",padding:"10px",borderRadius:"5px",border:"2px, solid, var(--green)",marginBottom:"1rem"}} 
                         />
                         <label><FormattedMessage id="lastName"/></label>
                         <input 
@@ -68,6 +69,7 @@ const SignUp = ({ setUser }) =>{
                             name="last_name"
                             onChange={handleInputChange}
                             value={formState.last_name}
+                            style={{minWidth:"70%",padding:"10px",borderRadius:"5px",border:"2px, solid, var(--green)",marginBottom:"1rem"}} 
                         />
                         <label><FormattedMessage id="userName"/></label>
                         <input 
@@ -76,6 +78,7 @@ const SignUp = ({ setUser }) =>{
                             name="username"
                             onChange={handleInputChange}
                             value={formState.username}
+                            style={{minWidth:"70%",padding:"10px",borderRadius:"5px",border:"2px, solid, var(--green)",marginBottom:"1rem"}} 
                         />
                         <label><FormattedMessage id="email"/></label>
                         <input 
@@ -84,6 +87,7 @@ const SignUp = ({ setUser }) =>{
                             name="email"
                             onChange={handleInputChange}
                             value={formState.email}
+                            style={{minWidth:"70%",padding:"10px",borderRadius:"5px",border:"2px, solid, var(--green)",marginBottom:"1rem"}} 
                         />
                         <label><FormattedMessage id="password"/></label>
                         <input 
@@ -92,6 +96,7 @@ const SignUp = ({ setUser }) =>{
                             name="password"
                             onChange={handleInputChange}
                             value={formState.password}
+                            style={{minWidth:"70%",padding:"10px",borderRadius:"5px",border:"2px, solid, var(--green)"}} 
                         />
                     </div>
                     <button 
