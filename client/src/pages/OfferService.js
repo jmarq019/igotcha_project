@@ -43,7 +43,6 @@ const OfferService = () =>{
         try {
             const { data } = await addServicePost({ 
                 variables: {
-                    // ...formState,
                     name : formState.name,
                     description: formState.description,
                     location: formState.location,
@@ -55,6 +54,7 @@ const OfferService = () =>{
                 },
             });
             history.go(0);
+            history.push("/offer-service")
         } 
         catch (err) {
             
@@ -72,6 +72,7 @@ const OfferService = () =>{
             }
         })
         history.go(0);
+        history.push("/offer-service")
     }
 
     // this code pertains to the images

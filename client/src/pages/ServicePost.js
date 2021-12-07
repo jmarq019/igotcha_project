@@ -61,7 +61,7 @@ const ServicePost = ({socket}) =>{
             <section className="edit full-width">
                 <form className="editprof fit stack" style={{margin:"auto", maxWidth:"70%"}}>
                     <h1 className="simple-header" style={{color:"white"}}>{service.type} </h1>
-                    <div>
+                        <div>
                         <h2> {service.name} </h2>
                         <h6><FormattedMessage id="by"/>: {service.user.first_name} {service.user.last_name}</h6>
                         <img id="profpic" className="center" alt="Profile Picture" src={service.image} style={{ maxHeight: '150px', margins:"0, auto" }} />
